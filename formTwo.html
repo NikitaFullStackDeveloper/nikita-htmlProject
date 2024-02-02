@@ -6,16 +6,18 @@
 <!--Backround color-->
 
 <body style="background-color:#436850; margin-top: 20px;">
-    <caption>Enjoy Programing Personal Details</caption>
-    <br><br>
-
+    
+<form>
+    
+    <fieldset>
+        <legend>Enjoy Programming:Enter your Details</legend>
     <!--FirstBox-->
-    <label for="fname">Preferred Timings:</label>
-    <input type="text" id="fname" name="fname"> to
-    <input type="text" id="fname" name="fname">
+    <label for="pt">Preferred Timings:</label>
+    <input type="time" id="pt"> to
+    <input type="time" id="pt">
     <br><br>
     <!--Batch Date-->
-    <label for="fname">Preferred Batch Date:</label>
+    <label for="pb">Preferred Batch Date:</label>
     <input type="date" id="month" name="year"> to
     <input type="date" id="date" name="date">
     <br><br>
@@ -28,11 +30,12 @@
     <input type="Email ID" id="Email ID" name="Email ID">
     <br><br>
     <!--Contact no.-->
-    <label for="fname">Contact No:</label>
-    <input type="number" id="fname" name="fname">
+    <label for="CN">Contact No:</label>
+    <input type="number" id="fname">
     <br><br>
     <!--Skill-->
-    <label for="fname">Communication Skill(out of 10):</label>
+    <label for="skill">Communication Skill(out of 10):</label>
+    <input type="range" id="skill">
 
     <br><br>
 
@@ -51,12 +54,12 @@
     <select>
         <option name="Proficient">Proficient</option>
         <option value="Proficient">visunary</option>
-        <option value="">ScollAR</option>
+        <option value="">Schloar</option>
         <option value="">Ambitious</option>
     </select>
     <br><br>
     <input style="background-color:#6962AD; font-size: 30px;" type="submit" value="Submit">
-
-
+</fieldset>
+</form>
 </html>
 </body>
