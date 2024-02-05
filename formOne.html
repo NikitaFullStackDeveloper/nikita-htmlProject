@@ -3,67 +3,103 @@
 
 <head>
 
+    <!--Internal Style-->
     <style>
-.form style{
-    background-color:#436850;
-    font-family: 'Poppins', sans-serif;
-}
+        .form-style {
+            background-color: hsl(141, 22%, 34%);
+            float: 20px;
+            padding: 20px;
+            height: 20%;
+            width: 400px;
+            margin-left: 200px;
+           
+        }
 
+        .text-style {
+            color: aliceblue;
 
+        }
+
+        .h1-style {
+            font-size: 22px;
+            color: rgb(66, 66, 129);
+            background-color: hsl(351, 28%, 59%);
+        }
+
+        body {
+            background-repeat: no-repeat;
+            background-size: 100% 200%;
+            padding: 100px;
+            background-image: url(data:image/jpeg;base64,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)
+        }
+
+        ;
     </style>
+
+    <!---Fonts link-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap"
+        rel="stylesheet">
 </head>
-<!--Backround color-->
 
 <body>
-    <caption>Enjoy Programing: Enter your Details</caption>
-    <br><br>
-<form class="form style">
-    <!--Name-->
-    <label for="fname">First Name:</label>
-    <input type="text" id="fname" name="fname">
-    <br><br>
-    <label for="fname">Last Name:</label>
-    <input type="text" id="fname" name="fname">
-    <br><br>
-    <!--Laptop Details-->
-    <caption>What laptop do you own?</caption>
-    <br><br>
-    <input type="checkbox" id="checkbox">
-    <label for="fname">Windows</label>
-    <br><br>
-    <input type="checkbox" id="checkbox">
-    <label for="fname">Linux</label>
-    <br><br>
-    <input type="checkbox" id="checkbox">
-    <label for="fname">Mac</label>
-    <br><br>
-    <!--Education-->
-    <caption>Select your education</caption>
-    <br><br>
-    <input type="radio" id="radio">
-    <label for="fname">Schooling</label>
-    <br><br>
-    <input type="radio" id="radio">
-    <label for="fname">Jr. College</label>
-    <br><br>
-    <input type="radio" id="radio">
-    <label for="fname">Graduation</label>
-    <br><br>
-    <input type="radio" id="radio">
-    <label for="fname"> Post Graduation</label>
-    <br><br>
-    <input type="radio" id="radio">
-    <label for="fname">PHD</label>
-    <br><br>
-    <!--Next page-->
-    <button>
-        <a href="./formTwo.html" style="float:right; color: rgb(65, 128, 151); font-size: 30px;">NEXT Page</a>
-    </button>
 
-</form>
+    <!--Heading-->
+    <form action="./formTwo.html" class="form-style">
+        <fieldset class="text-style">
+            <h1 class="h1-style">Enjoy Programing: Enter your Details</h1>
+            <ul>
+
+                <!--First box-->
+                <label for="name">First name:</label>
+                <input type="text">
+                <br>
+                <br>
+                <label for="last name">Last name:</label>
+                <input type="text">
+                <br>
+                <br>
+
+                <!--Second box-->
+                <li>What laptop do you own?</li>
+                <input type="checkbox" id="os">
+                <label for="windows">Windows</label>
+                <br>
+                <input type="checkbox" id="os">
+                <label for="linux">Linux</label>
+                <br>
+                <input type="checkbox" id="os">
+                <label for="mac">Mac</label>
+                <br><br>
+
+                <!--Third box-->
+                <li>Select your Education</li>
+                <br>
+                <input type="checkbox" id="Education">
+                <label for="schooling">Schooling</label>
+                <br>
+                <input type="checkbox" id="Education">
+                <label for="jr. collage">Jr.collage</label>
+                <br>
+                <input type="checkbox" id="Education">
+                <label for="graduation">Graduation</label>
+                <br>
+                <input type="checkbox" id="Education">
+                <label for="post graduation">Post Graduation</label>
+                <br>
+                <input type="checkbox">
+                <label for="PHD">PHD</label>
+                <br><br>
+
+                <!--Submit button-->
+                <input type="submit" value="Next page"
+                    style="font-size:30px; color: #857de0; background-color:#FFE4C9;">
+
+            </ul>
+        </fieldset>
+    </form>
 
 </body>
+
 </html>
