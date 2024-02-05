@@ -1,10 +1,10 @@
 .form-2 {
-    background-color: rgb(109, 176, 133);
-    height: 40%;
-    width: 600px;
+    background-color: #699e7c;
+    height: 30%;
+    width: 400px;
     float: 30px;
     padding: 20px;
-    margin-left: 300px;
+    margin-left: 100px;
     margin-top: 100px;
     color: rgb(241, 233, 233);
 
@@ -14,6 +14,3 @@
     font-size: 40px;
 }
 
-body {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXf-m5HmMZ3ZaI3BEUAse8xJw9r2JcQz-Uaw&usqp=CAU);
-}
