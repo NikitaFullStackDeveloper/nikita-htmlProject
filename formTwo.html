@@ -2,92 +2,64 @@
 <html>
 
 <head>
-    <!--CSS link relation-->
-    <link rel="stylesheet" href="formTwo.CSS">
-    <!--Font link-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@500&family=Roboto&display=swap"
-        rel="stylesheet">
-
 </head>
+<!--Backround color-->
 
-<body>
+<body style="background-color:#436850; margin-top: 20px;">
+    
+<form>
+    
+    <fieldset>
+        <legend>Enjoy Programming:Enter your Details</legend>
+    <!--FirstBox-->
+    <label for="pt">Preferred Timings:</label>
+    <input type="time" id="pt"> to
+    <input type="time" id="pt">
+    <br><br>
+    <!--Batch Date-->
+    <label for="pb">Preferred Batch Date:</label>
+    <input type="date" id="month" name="year"> to
+    <input type="date" id="date" name="date">
+    <br><br>
+    <!--Date of birth-->
+    <label for="fname">Date of Birth:</label>
+    <input type="date" id="Birthday" name="date">
+    <br><br>
+    <!--Email ID-->
+    <label for="fname">Email ID:</label>
+    <input type="Email ID" id="Email ID" name="Email ID">
+    <br><br>
+    <!--Contact no.-->
+    <label for="CN">Contact No:</label>
+    <input type="number" id="fname">
+    <br><br>
+    <!--Skill-->
+    <label for="skill">Communication Skill(out of 10):</label>
+    <input type="range" id="skill">
 
-    <form class="form-2" action="./formSubmisson.html">
-        <fieldset>
+    <br><br>
 
-            <!--Top section-->
-            <legend class="text-style">Enjoy Programing: Personal Details</legend>
-            <br><br>
+    <!--Age-->
+    <label for="fname">Age:</label>
+    <input type="Age" id="fname" name="fname">
+    <br><br>
+    <!--About Yourself-->
+    <label for="fname">Tell Something about yourself:</label>
+    <input type="about" id="fname" name="fname">
+    <br><br>
+    <!--Batch select-->
+    <label for="fname">Pick a Batch:</label>
+    <input type="batch" id="fname" name="fname">
 
-            <!--Time-->
-            <label for="pft">Prefered Timings:</label>
-            <input type="time" id="pft">
-            <label>to</label>
-            <input type="time" id="pft">
-            <br><br>
-
-            <!--Date-->
-            <label for="pdate">Prefered Date:</label>
-            <input type="date" id="pdate">
-            <label for="date">to</label>
-            <input type="date" id="pdate">
-            <br>
-            <br>
-
-            <!--Birth-->
-            <label for="dBirth">Date of Birth:</label>
-            <input type="date" id="dBirth">
-            <br><br>
-
-            <!--Mail ID-->
-            <label for="mail">Email ID:</label>
-            <input type="email" id="mail">
-            <br><br>
-
-            <!--Contact no.-->
-            <label for="contact">Contact No.:</label>
-            <input type="numbers" value="0-10">
-            <br><br>
-
-            <!--Skill.-->
-            <label for="skill">Communication skill(out of 10):</label>
-            <input type="range" value="0-10">
-            <br><br>
-
-            <!--Age-->
-            <label for="age">Age:</label>
-            <input type="numbers">
-            <br><br>
-
-            <!--About-->
-            <label>Tell something About yourself:</label>
-            <textarea id="about" style="height: 70px; width: 20%;" placeholder="Tell yourself"></textarea>
-            <br><br>
-
-            <!--Batch select-->
-            <label for="batch name">Pick a Batch:</label>
-
-            <select>
-                <optgroup label="senior"></optgroup>
-                <option value="professional batch">Proficient</option>
-                <option value="scholar">Scholar</option>
-                <optgroup label="sunior"></optgroup>
-
-                <option value="ambition">Ambition</option>
-                <option value="visinory">Visinory</option>
-            </select>
-            <br><br>
-
-            <!--Submit-->
-            <label for="submit" id="submit">
-                <input for="submit" type="Submit" style="font-size: 20px; color: blueviolet;">
-            </label>
-        </fieldset>
-    </form>
-
-</body>
-
+    <select>
+        <option name="Proficient">Proficient</option>
+        <option value="Proficient">visunary</option>
+        <option value="">Schloar</option>
+        <option value="">Ambitious</option>
+    </select>
+    <br><br>
+    <input style="background-color:#6962AD; font-size: 30px;" type="submit" value="Submit">
+</fieldset>
+</form>
 </html>
+</body>
