@@ -3,48 +3,68 @@
 
 <head>
     <style>
-        .main-container {
-            background-color: #A6CF98;
-            height: 700px;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: end;
-            flex-wrap: wrap;
-            
-        }
+.container {
+    height: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.leftcontainer {
+    background-color: green;
+    height: 600px;
+    width: 50%;
+}
+.rightcontainer{
+    height: 200px;
+    width: 50%;
+}
+.topbox {
+    background-color: red;
 
-        .inner-container {
-            height: 250px;
-            width: 30%;
-
-        }
-
-        .top-box {
-            background-color: #12372A;
-
-        }
-
-        .middle-box {
-            background-color: #D04848;
-            
-        }
-        .bottom-box{
-            background-color:#74E291 ;
-            flex-wrap: wrap;
-        }
-    </style>
-</head>
-
+}
+.middlebox {
+    background-color: green;
+}
+.bottombox {
+    background-color: blue;
+}
+  </style>
 <body>
-    <!--main container-->
-    <div class="main-container"> <video src="./videoFour.mp4" controls height="550"></video>
-            
-        <!--inner container-->
-        <div class="inner-container top-box"> <video src="./video.mp4" controls height="300px"></video></div>
-        <div class="inner-container middle-box"> <video src="./videoThree.mp4" controls height="300px"></video></div>
+
+    <div class="container">
+        <div class="leftcontainer"><video controls src="video.mp4" height="600px" width="100%"></video></div>
+        <div class="rightcontainer">
+
+            <div class="rightcontainer topbox"><video controls src="videoOne.mp4" height="100%" width="100%"></video></div>
+            <div class="rightcontainer middlebox"><video controls src="videoOne.mp4" height="100%" width="100%"></video></div>
+            <div class="rightcontainer bottombox"><video controls src="videoOne.mp4" height="100%" width="100%"></video></div>
+        </div>
+
     </div>
 
 </body>
-
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
