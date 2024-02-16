@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* main-container */
+        .main {
+            background-color: grey;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            height: 600px;
+            width: 850px;
+        }
+
+        /* first-row*/
+        .first-row {
+            background-color: red;
+            grid-template-columns: 1fr 1fr;
+            display: grid;
+            height: 200px;
+            width: 850px;
+        }
+
+        /* left-row*/
+        .left-row {
+            grid-template-columns: 1fr;
+            background-color: burlywood;
+        }
+
+        /* right-row*/
+        .right-row {
+            grid-template-columns: 2fr;
+            background-color: palevioletred;
+        }
+
+        /* second-row */
+        .second-row {
+            background-color: blueviolet;
+            grid-template-columns: 1fr 1fr 1fr;
+            display: grid;
+            height: 200px;
+            width: 750;
+        }
+
+        /* left-container*/
+        .left-container-second-row {
+            grid-template-columns: 1fr;
+            background-color: red;
+        }
+
+        /* middle-container*/
+        .middle-container {
+            grid-template-columns: 2fr;
+            background-color: palegreen;
+        }
+
+        /* last-container*/
+        .last-container {
+            grid-template-columns: 1fr;
+            background-color: green;
+        }
+
+        /* third-row*/
+        .third-row {
+            background-color: peachpuff;
+            grid-template-columns: 1fr 1fr;
+            display: grid;
+            height: 200px;
+            width: 750;
+        }
+
+        .third-left {
+            grid-template-columns: 1fr;
+            background-color: purple;
+
+        }
+
+        .third-right {
+            grid-template-columns: 1fr;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding-top: 0;">
+    <!--main-container-->
+    <div class="main">
+
+        <!--1-row-->
+        <div class="first-row">
+            <!--left-container-->
+            <div class="left-row"></div>
+            <!--right-container-->
+            <div class="right-row"></div>
+        </div>
+
+        <!--2-row-->
+        <div class="second-row">
+            <!--left-container-->
+            <div class="left-container-second-row"></div>
+            <!--middle-container-->
+            <div class="middle-container"></div>
+            <!--right-container-->
+            <div class="last-container"></div>
+        </div>
+
+        <!--3-row-->
+        <div class="third-row">
+            <!--left-container-->
+            <div class="third-left"></div>
+            <!--right-container-->
+            <div class="third-right"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
