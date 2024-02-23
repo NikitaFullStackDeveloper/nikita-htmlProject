@@ -2,99 +2,155 @@
 <html>
 
 <head>
-    <title>calender</title>
+    <title>Calculator</title>
     <style>
         .main-container {
-            background-color: grey;
             height: 80vh;
             width: 50vw;
-            display: flex;
-            flex-direction: column;
+            background-color: #1e1f22;
+            border-radius: 10px;
+            padding: 5px;
             margin-left: 5%;
-            margin-top: 2%;
-
+            margin-top: 3%;
         }
 
         .display {
-            background-color: black;
             height: 20%;
             width: 100%;
+            background-color: #1e1f22;
+        }
+
+        .keypad {
+            height: 80%;
+            width: 100%;
+            background-color: #1e1f22;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            gap: 2px;
+
         }
 
         .row {
+            background-color: #1e1f22;
             display: grid;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            border-style: solid;
-            border-color: black;
-            background-color: gray;
-            height: 80%;
-            width: 100%;
+            gap: 2px;
 
-        }
-
-        .grey {
-            background-color: #747264;
-            border-style: solid;
-
-        }
-
-        .orange {
-            background-color: orange;
-            border-style: solid;
         }
 
         .last-row {
+            background-color: #1e1f22;
             display: grid;
             grid-template-columns: 2fr 1fr 1fr;
-            border-style: solid;
-            background-color: grey;
-            border-color: black;
-            height: 16%;
-            width: 100%;
+            gap: 2px;
         }
-        
+
+
+        button {
+            color: white;
+            font-size: 22px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .gray-button {
+            background-color: #313334;
+        }
+
+        .lightgray-button {
+            background-color: #6b6b6b;
+        }
+
+        .yellow-button {
+            background-color: #fd8d0e;
+        }
     </style>
+
 </head>
 
 <body>
     <!--main-container-->
     <div class="main-container">
         <div class="display"></div>
-        <!--row-->
-        <div class="row">
-            <div class="grey"></div>
-            <div class="grey"></div>
-            <div class="grey"></div>
-            <div class="orange"></div>
+        <div class="keypad">
+            <!-- row-one -->
+            <div class="row">
+                <button class="gray-button ">
+                    <div class="button"></div>AC
+                </button>
+                <button class="gray-button ">
+                    <div class="button"></div>+/-
+                </button>
+                <button class="gray-button ">
+                    <div class="button"></div>%
+                </button>
+                <button class="yellow-button">
+                    <div class="button">/</div>
+                </button>
+            </div>
 
-            <div class="grey"></div>
-            <div class="grey"></div>
-            <div class="grey"></div>
-            <div class="orange"></div>
+            <!-- row-two -->
+            <div class="row">
+                <button class="lightgray-button ">
+                    <div class="button"></div>7
+                </button>
+                <button class="lightgray-button ">
+                    <div class="button"></div>8
+                </button>
+                <button class="lightgray-button ">
+                    <div class="button"></div>9
+                </button>
+                <button class="yellow-button">
+                    <div class="button"></div>x
+                </button>
+            </div>
 
-            <div class="grey"></div>
-            <div class="grey"></div>
-            <div class="grey"></div>
-            <div class="orange"></div>
+            <!-- row-three -->
+            <div class="row">
+                <button class="lightgray-button ">
+                    <div class="button"></div>4
+                </button>
+                <button class="lightgray-button ">
+                    <div class="button"></div>5
+                </button>
+                <button class="lightgray-button ">
+                    <div class="button"></div>6
+                </button>
+                <button class="yellow-button">
+                    <div class="button"></div>-
+                </button>
 
-            <div class="grey"></div>
-            <div class="grey"></div>
-            <div class="grey"></div>
-            <div class="orange"></div>
+            </div>
+            <!-- row-four -->
+            <div class="row">
+                <button class="lightgray-button ">
+                    <div class="button"></div>1
+                </button>
+                <button class="lightgray-button ">
+                    <div class="button"></div>2
+                </button>
+                <button class="lightgray-button ">
+                    <div class="button"></div>3
+                </button>
+                <button class="yellow-button">
+                    <div class="button"></div>+
+                </button>
+            </div>
+
+            <!-- row- last -->
+            <div class="last-row">
+                <button class="lightgray-button ">
+                    <div class="button"></div>0
+                </button>
+                <button class="lightgray-button ">
+                    <div class="button"></div>.
+                </button>
+                <button class="yellow-button">
+                    <div class="button"></div>=
+                </button>
+            </div>
+
         </div>
-
-        <!--last-row-->
-        <div class="last-row">
-            <div class="grey"></div>
-            <div class="grey"></div>
-            <div class="orange"></div>
-        </div>
-
-
-
-
-
     </div>
 </body>
 
