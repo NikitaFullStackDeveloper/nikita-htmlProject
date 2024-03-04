@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>assignment</title>
+    <style>
+        .main-container {
+            background-color: #CD8D7A;
+            width: 80vw;
+            height: 40vw;
+            margin-left: 8%;
+            margin-top: 3%;
+            border-radius: 5%;
+        }
+
+        #display {
+            height: 20%;
+            width: 100%;
+            background-color: #607274;
+            border-radius: 2%;
+        }
+
+        button {
+            height: 100px;
+            width: 200px;
+            background-color: #5C8984;
+            margin-top: 5%;
+            margin-left: 5%;
+        }
+    </style>
+    <script>
+        function ShowEvenodd() {
+            let x = document.getElementById("evenodd").value;
+            if (x % 2 == 0) {
+                document.getElementById("display").innerHTML = "The number is even";
+            } else {
+                document.getElementById("display").innerHTML = "The number is odd";
+            }
+        }
+
+        function CheckVote() {
+            let y = document.getElementById("age").value;
+            if (y >= 18) {
+                document.getElementById("display").innerHTML = "Eligible for vote";
+            } else {
+                document.getElementById("display").innerHTML = "Not Eligible for vote";
+            }
+        }
+
+        function CheckEqual() {
+            firstnum = document.getElementById("evenodd").value;
+            secondnum = document.getElementById("age").value;
+            if (firstnum == secondnum) {
+                document.getElementById("display").innerHTML = " The Number is Equal";
+            } else {
+                document.getElementById("display").innerHTML = " The Number is En-equal";
+            }
+        }
+
+        function clearfunction() {
+            document.getElementById("display").innerHTML = "";
+        }
+    </script>
+
+</head>
+
+<body>
+    <!--main-container-->
+    <div class="main-container">
+        <!--display-->
+        <h1 id="display"></h1>
+        <!--input-type-button-->
+        <input type="number" value="0" id="evenodd"
+            style="width:40%;  height: 10%; margin-left: 5%; margin-top: 3%; font-size: 30px; text-align: center; background-color: #FCE09B;">
+        <input type="number" value="0" id="age"
+            style="width:40%;   height:10%; margin-left: 5%; margin-top: 3%; font-size: 30px; text-align:center; background-color: #FCE09B;">
+        <div>
+            <!--button-->
+            <button onclick="ShowEvenodd()">Check even and odd</button>
+            <button onclick="CheckVote()">Check vote</button>
+            <button onclick="CheckEqual()">Check equal</button>
+            <button onclick="clearfunction()">Clear</button>
+        </div>
+
+    </div>
+
+</html>
+</body>
