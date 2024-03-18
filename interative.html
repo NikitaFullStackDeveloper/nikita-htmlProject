@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JV</title>
+
+    <style>
+        .main-container {
+            height: 50vw;
+            width: 50vw;
+            background-color: gray;
+            margin-left: 20%;
+            margin-top: 3%;
+        }
+
+        #display {
+            height: 30%;
+            width: 100%;
+            background-color: lightcoral;
+        }
+
+        .button {
+            height: 10%;
+            width: 80%;
+            margin-top: 5%;
+            margin-left: 5%;
+            font-size: 22px;
+            background-color: chartreuse;
+        }
+
+        .input {
+            height: 10%;
+            width: 80%;
+            margin-top: 5%;
+            margin-left: 5%;
+        }
+    </style>
+    <script>
+let z = 100;
+
+function daysRemaining(){
+
+let x = 123;
+let y = x.toString();
+
+console.log("PRINT Y ", y, x);
+document.getElementById("display").innerHTML = y + " DAYS REMAINING"
+}
+
+// function daysRemaining() {
+//     //INPUT
+//     let x =
+//      prompt("ENTER YOUR AGE");
+
+//     //PROCESS
+//     //TYPE CONVERSION
+//     let y = Number(x)
+
+// //YEARS REMAINING
+//     let z = 100 - y;
+
+//     //MULTIPLY BY DAYS
+//     let days = z * 365;
+
+//     //OUTPUT
+//     document.getElementById("display").innerHTML = days + "DAYS REMAINING";
+
+// }
+
+
+
+
+// function playMusiv(){
+// sa();
+// re();
+
+// }
+// function sa(){
+// console.log(" SA");
+
+// }
+// function re(){
+//     console.log(" RE");
+
+// }
+// function gg(){
+//     console.log(" GG");
+
+// }
+// function mm(){
+//     console.log(" MM");
+
+// }
+
+//         function startReading(action, numOne,numTwo){
+
+// let x = document.getElementById("inputOne").value;
+// let y = document.getElementById("inputTwo").value;
+
+// process ("mul", x, y);
+// process ("add", x, y);
+// process ("sub", x, y);
+// process ("div", x, y);
+
+// output(z);
+//         }
+
+// function process(action, numOne, numTwo) { 
+//     let result = 0;
+//    numOne = Number(numOne);
+//    numTwo = Number(numTwo);
+
+
+//    if (action == "a"){
+//     result = numOne + numTwo;
+//    } else if (action == "b"){
+//     result = numOne - numTwo;
+//    } else if (action == "c"){
+//     result = numOne * numTwo;
+//    }else if (action == "d") {
+//     result = numOne / numTwo;
+//    } else {
+//     result = "INVALID OPERATION"
+//    }
+
+//    document.getElementById("display").innerHTML = result;
+//     console.log("OUTPUT", result);
+// }
+
+
+
+            // let numOne = document.getElementById("inputOne").value;
+            // let numTwo = document.getElementById("inputTwo").value;
+
+            // let result = numOne + numTwo;
+
+
+            // document.getElementById("display").innerHTML = RESULT;
+            // console.log("OUTPUT ", result);
+        
+
+
+
+        // function myfunction() {
+        //     let x = 123;
+        //     let paraOne = document.getElementById("display-text").value;
+        //     let paraTwo = document.getElementById("display").value;
+        //     console.log("THE RESULT --", paraOne, paraTwo, x);
+        // }
+    </script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="display-container" id="display"></div>
+        <h1></h1>
+        <input type="number" id="inputOne" class="input">
+        <input type="number" id="inputTwo" class="input">
+        <button class="button" onclick="daysRemaining()">click</button>
+    </div>
+</body>
+
+</html>
