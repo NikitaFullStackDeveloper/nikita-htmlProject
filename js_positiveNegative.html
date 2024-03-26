@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Positive Negative Number</title>
+   
+    <style>
+        .main-container {
+            height: 60vw;
+            width: 60vw;
+            background-color: #76ABAE;
+            margin-top: 3%;
+            margin-left: 20%;
+        }
+
+        .display {
+            background-color: grey;
+            height: 33%;
+            width: 100%;
+            font-size: 40px;
+            border-radius: 8%;
+            text-align: center;
+
+        }
+
+        .input-box {
+            height: 50px;
+            width: 550px;
+            background-color: #FFF7E9;
+            font-size: 22px;
+            margin-top: 5%;
+            margin-left: 10%;
+            border-radius: 20px;
+
+        }
+
+        button {
+            font-size: 20px;
+            border-radius: 20px;
+            height: 50px;
+            width: 400px;
+            background-color: #2B3467;
+            margin-top: 5%;
+            margin-left: 20%;
+
+        }
+    </style>
+
+    <script>
+        function naturalfunction() {
+            let x = document.getElementById("number").value;
+
+            let output;
+            if (x > 0) {
+                output = "NUMBER IS POSITIVE";
+
+            } 
+            else if (x < 0) {
+                output = "NUMBER IS NEGATIVE";
+
+            } 
+            else {
+                output = "NUMBER IS ZERO";
+            }
+            document.getElementById("display-text").innerHTML = output;
+        }
+
+        function clearfuntion() {
+            document.getElementById("display-text").innerHTML = "";
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="display" id="display-text"></div>
+
+        <input class="input-box" id="number" type="">
+
+        <button class="button" onclick="naturalfunction()">Check positive negative number</button>
+        <button class="button" onclick="clearfuntion()">Clear Button</button>
+    </div>
+
+</body>
+
+</html>

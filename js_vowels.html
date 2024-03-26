@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>VOWELS</title>
+    <style>
+        .main-container {
+            height: 90vh;
+            width: 70vw;
+            background-color: #EFBC9B;
+            margin-top: 2%;
+            margin-left: 15%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .display {
+            height: 30%;
+            width: 100%;
+            background-color: #747264;
+            border-radius: 5%;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .input-box {
+            height: 20%;
+            width: 60%;
+        }
+
+        .input {
+            height: 40%;
+            width: 90%;
+            background-color: #6AD4DD;
+            margin-top: 10%;
+            margin-left: 15%;
+            border-radius: 20px;
+            font-size: 30px;
+        }
+
+        .button {
+            height: 40%;
+            width: 90%;
+            background-color: #6196A6;
+            margin-top: 10%;
+            margin-left: 15%;
+            border-radius: 20px;
+            font-size: 22px;
+        }
+    </style>
+    <script>
+
+        function vowelscheck() {
+            let z = document.getElementById("input").value;
+            let output = "vowel";
+            if (z == "a" || z == "e" || z == "i" || z == "o" || z == "u") {
+                output = "vowel";
+
+            } else {
+                output = "conjuctive";
+            }
+            console.log("vowelscheck", output)
+            document.getElementById("display-text").innerHTML = output;
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="display" id="display-text"></div>
+        <div class="input-box">
+            <input class="input" type="text" id="input">
+            <button class="button" onclick="vowelscheck()">CLICK</button>
+
+        </div>
+    </div>
+</body>
+
+</html>

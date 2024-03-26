@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HIGHEST NUMBER</title>
+    <style>
+        .main-container {
+            height: 90vh;
+            width: 70vw;
+            background-color: #58A399;
+            margin-top: 2%;
+            margin-left: 15%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .display {
+            height: 35%;
+            width: 100%;
+            color: white;
+            margin-top: 5%;
+            background-color: #344955;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .input-box {
+            height: 20%;
+            width: 60%;
+        }
+
+        .input {
+            height: 4vw;
+            width: 40vw;
+            margin-top: 10%;
+            margin-left: 10%;
+            border-radius: 20px;
+            font-size: 30px;
+        }
+
+        .button {
+            height: 50%;
+            width: 95%;
+            color: white;
+            background-color: #092635;
+            margin-top: 10%;
+            margin-left: 10%;
+            border-radius: 20px;
+            font-size: 22px;
+
+        }
+    </style>
+
+    <script>
+        function Checkday() {
+            let x = document.getElementById("inputone").value;
+            let output;
+            if (x == 1) {
+                output = "Sunday";
+            } else if (x == 2) {
+                output = "Monday";
+            } else if (x == 3) {
+                output = "Tuesday"
+            } else if (x == 4) {
+                output = "wednesday"
+            }
+            else if (x == 5) {
+                output = "Thursday"
+            }
+            else if (x == 6) {
+                output = "Friday"
+            }
+            else if (x == 7) {
+                output = "Saturday"
+            }
+
+            else {
+                output = "invalid"
+            }
+            document.getElementById("display-text").innerHTML = output;
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="display" id="display-text"></div>
+        <div class="input-box">
+            <input class="input" type="number" id="inputone" placeholder="Enter Number">
+
+            <button class="button" onclick="Checkday()">CLICK</button>
+
+        </div>
+    </div>
+</body>
+
+</html>
