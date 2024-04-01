@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HIGHEST NUMBER</title>
+    <style>
+        .main-container {
+            height: 90vh;
+            width: 70vw;
+            background-color: #85586F;
+            margin-top: 2%;
+            margin-left: 15%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .display {
+            height: 25%;
+            width: 100%;
+            background-color: #ADBC9F;
+            border-radius: 5%;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .input-box {
+            height: 20%;
+            width: 60%;
+        }
+
+        .input {
+            height: 4vw;
+            width: 40vw;
+            background-color: #6AD4DD;
+            margin-top: 5%;
+            margin-left: 15%;
+            border-radius: 20px;
+            font-size: 30px;
+        }
+
+        .button {
+            height: 50%;
+            width: 95%;
+            color: white;
+            background-color: #0C2D57;
+            margin-top: 5%;
+            margin-left: 15%;
+            border-radius: 20px;
+            font-size: 22px;
+        }
+    </style>
+    <script>
+        function Largenumber() {
+            let a = Number(document.getElementById("inputone").value);
+            let b = Number(document.getElementById("inputtwo").value);
+            let c = Number(document.getElementById("inputthree").value);
+            let output;
+
+            if (a>b && a>c) {
+                output = a;
+                document.getElementById("display-text").innerHTML = "LARGEST Number" + output;
+
+            } else if (b>c && b>a) {
+                output = b;
+                document.getElementById("display-text").innerHTML = "LARGEST Number" + output;
+
+            } else {
+                output = c;
+                document.getElementById("display-text").innerHTML = "LARGEST Number" + output;
+
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="display" id="display-text"></div>
+        <div class="input-box">
+            <input class="input" type="number" id="inputone" placeholder="firstnumber">
+            <input class="input" type="number" id="inputtwo" placeholder="secondnumber">
+            <input class="input" type="number" id="inputthree" placeholder="thirdnumber">
+            <button class="button" onclick="Largenumber()">CLICK</button>
+
+        </div>
+    </div>
+</body>
+
+</html>
