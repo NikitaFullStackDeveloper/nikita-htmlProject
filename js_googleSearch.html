@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .main-container {
+            max-width: 700px;
+            text-align: center;
+            margin: 30px;
+            
+        }
+
+        h2 {
+            font-family: serif;
+            font-size: 60px;
+            margin-left: 5%;
+            color: #114232;
+        }
+
+        .search-form {
+            width: 490px;
+            height: 40px;
+            font-size: 22px;
+            border-radius: 10px;
+        }
+
+        .button {
+            background-color: #114232;
+            border-radius: 10px;
+            font-size: 18px;
+
+
+        }
+
+        .display {
+            height: 20px;
+            width: 490px;
+            border-radius: 20px;
+            color: black;
+            margin-top: 18%;
+            margin-left: 8%;
+            padding: 10px;
+            border: 2px solid #beb5af;
+        }
+    </style>
+    <script>
+
+        function searchInput() {
+
+            let students = ["nikita", "shivansh", "mangesh", "priya", "prachi", "priyanshu", "achal", "astha", "sumit",];
+
+            let i = 0;
+            let isfound = false;
+            let foundAtPosition = 0;
+
+            let search = document.getElementById("input").value;
+            console.log("search = ", search);
+
+            while (i < students.length) {
+                let stu = students[i];
+
+                if (stu.toUpperCase() == search.toUpperCase()); {
+                    isFound = true;
+                    foundAtPosition = i;
+                }
+
+                console.log(i);
+                i++
+            }
+
+            if (isfound == true) {
+                document.getElementById("display-text").innerHTML = "STUDENT AT FOUND" + foundAtPosition;
+            } else {
+                document.getElementById("display-text").innerHTML = "STUDENT NOT FOUND";
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main-container">
+        <h2>ENJOY PROGRAMING</h2>
+
+        <form id="search">
+
+            <input type="text" id="search" class="search-form" placeholder="search..." onclick="searchInput()">
+
+            <button class="button" type="submit-button">Search</button>
+            <div class="display" id="display-text"></div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

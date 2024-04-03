@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>STUDENT LOGIN FORM</title>
+    <style>
+        
+        .form {
+            height: 50vw;
+            width: 85vw;
+            background-color: #A1C398;
+            margin-left: 7%;
+            border: solid 2px black;
+        }
+
+        .button {
+            height: 8%;
+            width: 30%;
+            margin-top: 1%;
+            margin-left: 5%;
+            text-align: center;
+            font-family: Georgia, serif;
+            font-size: 40PX;
+            background-color: #070F2B;
+            border-radius: 20PX;
+            color: aliceblue;
+        }
+
+        .h1 {
+            text-align: center;
+            font-family: cursive;
+        }
+
+        .text-style {
+            font-size: 20px;
+            font-family: sans-serif;
+
+        }
+
+        .submit-button {
+            margin-left: 5%;
+            height: 50px;
+            width: 150px;
+            border-radius: 20px;
+            background-color: #070F2B;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!--form-->
+    <form class="form">
+
+        <!--fieldset-->
+        <Fieldset class="text-style">
+
+            <!--button entry list-->
+            <button class="button">ENTRY</button>
+            <button class="button">LIST</button>
+
+            <!--h1-->
+            <h1>ENJOY PROGRAMING: STUDENT DETAILS :</h1>
+
+            <!--first name-->
+            <label for="fname">FIRST NAME : </label>
+            <input type="text" id="fname" name="fname" placeholder="ENTER FIRST NAME">
+            <br><br>
+
+            <!--last name-->
+            <label for="fname">LAST NAME : </label>
+            <input type="text" id="fname" name="fname" placeholder="ENTER LAST NAME">
+            <br><br>
+
+            <!--gender-->
+            <label for="gender">GENDER : </label>
+            <input type="radio" name="gender" value="MALE"> MALE
+            <input type="radio" name="gender" value="FEMALE"> FEMALE
+            <br><br>
+
+            <!--education-->
+            <label for="education"> EDUCATION : </label>
+
+            <select>
+                <option value="EDUCATION">M.COM</option>
+                <option value="M.COM">M.COM</option>
+                <option value="B.COM">B.COM</option>
+                <option value="MCA">MCA</option>
+                <option value="MBA">MBA</option>
+            </select>
+            <br><br>
+
+            <!--date of birth-->
+            <label for="fnmae">DATE OF BIRTH : </label>
+            <input type="date" id="Birthday" name="date">
+            <br><br>
+
+            <!--contact number-->
+            <label for="CN">CONTACT NO. : </label>
+            <input type="number" id="fnmae">
+            <br><br>
+
+            <!--roll number-->
+            <label for="rollNo">ROLL NO. : </label>
+            <input type="number" id="fnmae">
+            <br><br>
+
+            <!--address-->
+            <label for="address">ADDRESS : </label>
+            <input type="number" id="fnmae">
+            <br><br>
+
+            <!--age-->
+            <label for="fname">AGE :</label>
+            <input type="age" id="fname" name="fname">
+            <br><br>
+
+            <!--about yourself-->
+            <label for="fname">TELL ME ABOUT YOURSELF : </label>
+            <input type="about" id="fname" name="fname">
+            <br><br>
+
+            <!--skill-->
+            <label for="skill">COMMUNICATION SKILL (OUT OF 10)</label>
+            <input type="range" id="skill">
+            <br><br>
+
+            <!--submit button-->
+            <button class="submit-button">SUBMIT</button>
+
+        </Fieldset>
+    </form>
+</body>
+
+</html>

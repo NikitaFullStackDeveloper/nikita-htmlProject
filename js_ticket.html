@@ -34,6 +34,7 @@
             background-color: aquamarine;
 
         }
+
         button {
             height: 10%;
             width: 80%;
@@ -45,7 +46,7 @@
         }
     </style>
     <script>
-        function ticket(){
+        function ticket() {
             let y = document.getElementById("input").value;
             let age = Number(y);
             let output;
@@ -63,13 +64,21 @@
 
 </head>
 
-<body style="background-image: url(https://images.livemint.com/img/2023/01/18/1600x900/INDIAN_RAILWAYS_1674012578722_1674012579049_1674012579049.jpg);">
+<body
+    style="background-image: url(https://images.livemint.com/img/2023/01/18/1600x900/INDIAN_RAILWAYS_1674012578722_1674012579049_1674012579049.jpg);">
+
+    <!--main-->
     <div class="main-container">
+
+        <!--display-->
         <div class="display" id="display-text"></div>
-        
-            <input class="input-box" type="number" id="input">
-            <button class="button" onclick="ticket()">CLICK</button>
-     
+
+        <!--input-->
+        <input class="input-box" type="number" id="input">
+
+        <!--button-->
+        <button class="button" onclick="ticket()">CLICK</button>
+
     </div>
 </body>
 
