@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>kbc</title>
+    <style>
+        /* main-container */
+        .main-container {
+            height: 80%;
+            width: 80%;
+
+        }
+
+        /* start-button */
+        .start-button {
+            background-color: rgb(7, 50, 50);
+            height: 50px;
+            width: 200px;
+            color: white;
+            font-size: 20px;
+            border-radius: 25px;
+        }
+
+        /* display */
+        .display {
+            height: 20vh;
+            width: 72%;
+            display: flex;
+            justify-content: center;
+            margin-top: 3%;
+            background-color: #124076;
+            margin-left: 2%;
+            border-radius: 50px;
+        }
+
+        /* dispaly-text */
+        .display-text {
+            font-size: 25px;
+            color: white;
+            margin-top: 5%;
+        }
+
+        /* button */
+        .button {
+            background-color: #361d46;
+            height: 80px;
+            width: 35%;
+            color: white;
+            font-size: 20px;
+            margin-top: 2%;
+            border-radius: 5%;
+            margin-left: 2%;
+            border-radius: 50px;
+        }
+    </style>
+
+    <script>
+        //global//
+        let questionNumber = 0;
+        //question
+        function questionOne() {
+            document.getElementById("text-display").innerHTML =
+                "1: HTML stands for -";
+            document.getElementById("numOne").innerHTML = "A: HighText Machine Language";
+            document.getElementById("numTwo").innerHTML = "B: HyperText and links Markup Language";
+            document.getElementById("numThree").innerHTML = "C: HyperText Markup Language";
+            document.getElementById("numFour").innerHTML = "D: None of these";
+        }
+        function questionTwo() {
+            document.getElementById("text-display").innerHTML =
+                "2: What are the types of unordered or bulleted list in HTML?";
+            document.getElementById("numOne").innerHTML = "A: disc, square, triangle";
+            document.getElementById("numTwo").innerHTML = "B: polygon, triangle, circle";
+            document.getElementById("numThree").innerHTML = "C: disc, circle, square";
+            document.getElementById("numFour").innerHTML = "D: All of the above";
+        }
+        function questionThree() {
+            document.getElementById("text-display").innerHTML =
+                "3: Which of the following is not a front-end technology?";
+            document.getElementById("numOne").innerHTML = "A: HTML";
+            document.getElementById("numTwo").innerHTML = "B: CSS";
+            document.getElementById("numThree").innerHTML = "C: JavaScript";
+            document.getElementById("numFour").innerHTML = "D: SQL";
+        }
+        function questionFour() {
+            document.getElementById("text-display").innerHTML = "4: What are the types of unordered or bulleted list in HTML?";
+            document.getElementById("numOne").innerHTML = "A: disc, square, triangle";
+            document.getElementById("numTwo").innerHTML = "B: polygon, triangle, circle";
+            document.getElementById("numThree").innerHTML = "C: disc, circle, square";
+            document.getElementById("numFour").innerHTML = "D: All of the above";
+        }
+        function questionFive() {
+            document.getElementById("text-display").innerHTML =
+                "5:  The purpose of the Front-end framework in Full stack development is ____.";
+            document.getElementById("numOne").innerHTML = "A: To provide the client-side interface";
+            document.getElementById("numTwo").innerHTML = "B: To manage database";
+            document.getElementById("numThree").innerHTML = "C: To reduce the server load";
+            document.getElementById("numFour").innerHTML = "D: To send http requests";
+        }
+        function questionSix() {
+            document.getElementById("text-display").innerHTML =
+                "6: Database in Full stack development is used to ____.";
+            document.getElementById("numOne").innerHTML = "A: Styling HTML pages";
+            document.getElementById("numTwo").innerHTML = "B: Storing and retrieving data";
+            document.getElementById("numThree").innerHTML = "C: Handling errors on server-side";
+            document.getElementById("numFour").innerHTML = "D: Rendering web pages";
+        }
+        function questionSeven() {
+            document.getElementById("text-display").innerHTML =
+                "7: What is Git?";
+            document.getElementById("numOne").innerHTML = "A: Framework";
+            document.getElementById("numTwo").innerHTML = "B: Version control system";
+            document.getElementById("numThree").innerHTML = "C: Database";
+            document.getElementById("numFour").innerHTML = "D: Package manager";
+        }
+        function questionEight() {
+            document.getElementById("text-display").innerHTML =
+                "8: Which of the following is not a state of India?";
+            document.getElementById("numOne").innerHTML = "A: Vrindachal";
+            document.getElementById("numTwo").innerHTML = "B: Goa";
+            document.getElementById("numThree").innerHTML = "C: Jharkhand";
+            document.getElementById("numFour").innerHTML = "D: Chattisgarh";
+        }
+        function questionNine() {
+            document.getElementById("text-display").innerHTML =
+                "9: CRUD stands for ____.";
+            document.getElementById("numOne").innerHTML = "A: Create, Read, Upload, Delete";
+            document.getElementById("numTwo").innerHTML = "B: Create, Read, Upgrade, Deploy";
+            document.getElementById("numThree").innerHTML = "C: Create, Remove, Upgrade, Delete";
+            document.getElementById("numFour").innerHTML = "D: Create, Read, Update, Delete";
+        }
+        function questionTen() {
+            document.getElementById("text-display").innerHTML =
+                "10:  SPA stands for ____.";
+            document.getElementById("numOne").innerHTML = "A: Standard Page Application";
+            document.getElementById("numTwo").innerHTML = "B: Single Page Application";
+            document.getElementById("numThree").innerHTML = "C: Smart Protocol Authentication";
+            document.getElementById("numFour").innerHTML = "D: Scalable Performance Architecture";
+        }
+        function questionEleven() {
+            document.getElementById("text-display").innerHTML =
+                "11: Amongst which of the following is a back-end framework in Python?";
+            document.getElementById("numOne").innerHTML = "A: Django";
+            document.getElementById("numTwo").innerHTML = "B: Flask";
+            document.getElementById("numThree").innerHTML = "C: Both A and B";
+            document.getElementById("numFour").innerHTML = "D: None of the above";
+        }
+        function questionTwlve() {
+            document.getElementById("text-display").innerHTML =
+                "12:  Amongst which of the following type of database is used in Full stack development?";
+            document.getElementById("numOne").innerHTML = "A: Relational";
+            document.getElementById("numTwo").innerHTML = "B: JSON";
+            document.getElementById("numThree").innerHTML = "C: XML";
+            document.getElementById("numFour").innerHTML = "D: GraphQL";
+        }
+        function questionThirteen() {
+            document.getElementById("text-display").innerHTML =
+                "13: Which of the following is an array method in JavaScript?";
+            document.getElementById("numOne").innerHTML = "A: map";
+            document.getElementById("numTwo").innerHTML = "B: every";
+            document.getElementById("numThree").innerHTML = "C: reduce";
+            document.getElementById("numFour").innerHTML = "D: all of the above";
+        }
+        function questionFourteen() {
+            document.getElementById("text-display").innerHTML =
+                "14: Which of the following is a type of pop-up box in JavaScript?";
+            document.getElementById("numOne").innerHTML = "A: alert";
+            document.getElementById("numTwo").innerHTML = "B: console";
+            document.getElementById("numThree").innerHTML = "C: DOM";
+            document.getElementById("numFour").innerHTML = "D: canvas";
+        }
+        function questionFifteen() {
+            document.getElementById("text-display").innerHTML =
+                "15: The correct sequence of HTML tags for starting a webpage is -";
+            document.getElementById("numOne").innerHTML = "A: Head, Title, HTML, body";
+            document.getElementById("numTwo").innerHTML = "B: HTML, Body, Title, Head";
+            document.getElementById("numThree").innerHTML = "C: HTML, Head, Title, Body";
+            document.getElementById("numFour").innerHTML = "D: HTML, Head, Title, Body";
+        }
+
+        //  function question question //
+        function question(question) {
+            document.getElementById("container").style.backgroundColor = "blue";
+
+            if (question == 1) {
+                questionNumber = 1;
+                questionOne();
+            } else if (question == 2) {
+                questionNumber = 2;
+                questionTwo();
+            } else if (question == 3) {
+                questionNumber = 3;
+                questionThree();
+            } else if (question == 4) {
+                questionNumber = 4;
+                questionFour();
+            } else if (question == 5) {
+                questionNumber = 5;
+                questionFive();
+            } else if (question == 6) {
+                questionNumber = 6;
+                questionSix();
+            } else if (question == 7) {
+                questionNumber = 7;
+                questionSeven();
+            } else if (question == 8) {
+                questionNumber = 8;
+                questionEight();
+            } else if (question == 9) {
+                questionNumber = 9;
+                questionNine();
+            } else if (question == 10) {
+                questionNumber = 10;
+                questionTen();
+            } else if (question == 11) {
+                questionNumber = 11;
+                questionEleven();
+            } else if (question == 12) {
+                questionNumber = 12;
+                questionTwlve();
+            } else if (question == 13) {
+                questionNumber = 13;
+                questionThirteen();
+            } else if (question == 14) {
+                questionNumber = 14;
+                questionFourteen();
+            } else if (question == 15) {
+                questionNumber = 15;
+                questionFifteen();
+            }
+            else {
+                document.getElementById("text-display").innerHTML = "BADHAYI HO.... AAP JEET GAYE 7 CRORE RUPEE..."
+            }
+        }
+        //correct ans
+        function answer(givenAnswer) {
+            if (questionNumber == 1) {
+                if (givenAnswer == 3) {
+                    answerOne(true, 2);
+                } else {
+                    answerOne(false, 0);
+                }
+            } else if (questionNumber == 2) {
+                if (givenAnswer == 3) {
+                    answerOne(true, 3);
+                } else {
+                    answerOne(false, 0);
+                }
+            } else if (questionNumber == 3) {
+                if (givenAnswer == 4) {
+                    answerOne(true, 4);
+                } else {
+                    answerOne(false, 0);
+                }
+            } else if (questionNumber == 4) {
+                if (givenAnswer == 3) {
+                    answerOne(true, 5);
+                } else {
+                    answerOne(false, 0);
+                }
+            } else if (questionNumber == 5) {
+                if (givenAnswer == 1) {
+                    answerOne(true, 6);
+                } else {
+                    answerOne(false, 0);
+                }
+            } else if (questionNumber == 6) {
+                if (givenAnswer == 2) {
+                    answerOne(true, 7);
+                } else {
+                    answerOne(false, 0);
+                }
+            } else if (questionNumber == 7) {
+                if (givenAnswer == 2) {
+                    answerOne(true, 8);
+                } else {
+                    answerOne(false, 0);
+                }
+            } else if (questionNumber == 8) {
+                if (givenAnswer == 2) {
+                    answerOne(true, 9);
+                } else {
+                    answerOne(false, 0);
+                }
+            } else if (questionNumber == 9) {
+                if (givenAnswer == 4) {
+                    answerOne(true, 10);
+                } else {
+                    answerOne(false, 0);
+                }
+            } else if (questionNumber == 10) {
+                if (givenAnswer == 2) {
+                    answerOne(true, 11);
+                } else {
+                    answerOne(false, 0);
+                }
+            } else if (questionNumber == 11) {
+                if (givenAnswer == 3) {
+                    answerOne(true, 12);
+                } else {
+                    answerOne(false, 0);
+                }
+            } else if (questionNumber == 12) {
+                if (givenAnswer == 1) {
+                    answerOne(true, 13);
+                } else {
+                    answerOne(false, 0);
+                }
+            } else if (questionNumber == 13) {
+                if (givenAnswer == 4) {
+                    answerOne(true, 14);
+                } else {
+                    answerOne(false, 0);
+                }
+            } else if (questionNumber == 14) {
+                if (givenAnswer == 1) {
+                    answerOne(true, 15);
+                } else {
+                    answerOne(false, 0);
+                }
+            } else if (questionNumber == 15) {
+                if (givenAnswer == 4) {
+                    answerOne(true, 16);
+                } else {
+                    answerOne(false, 0)
+                }
+            }
+        }
+        //correct -incorrect//
+        function answerOne(correctAnswer, nextQuestion) {
+            if (correctAnswer) {
+                document.getElementById("text-display").innerHTML =
+                    "Bilkul Sahi Jawab";
+                document.getElementById("container").style.backgroundColor =
+                    "#FFBB5C";
+
+                setTimeout(() => {
+                    question(nextQuestion);
+                }, 3000);
+            } else {
+                document.getElementById("text-display").innerHTML =
+                    " Galat Jawab.";
+                document.getElementById("container").style.backgroundColor =
+                    "#B31312";
+                setTimeout(() => {
+                    startScreen();
+                }, 2000);
+            }
+        }
+        //hiddn
+        function dostart() {
+            document.getElementById("main-body").hidden = false;
+            document.getElementById("play-button").hidden = true;
+            question(1);
+        }
+        function startScreen() {
+            document.getElementById("main-body").hidden = true;
+            document.getElementById("play-button").hidden = false;
+
+        }
+    </script>
+</head>
+
+<!--bacground-image-->
+
+<body
+    style="background-image: url(https://www.koimoi.com/wp-content/new-galleries/2022/07/kbc-director-reveals-format-changes-talks-about-joys-of-working-with-big-b-01.jpg); background-repeat: no-repeat; background-size: cover;">
+    <!--start-button-->
+    <button class="start-button" id="play-button" onclick="dostart()">LET"S START</button>
+    <div class="main-container" id="main-body" hidden="true" style="margin-left: 220px; margin-top: 320px;">
+
+        <div class="display" id="container">
+            <h1 id="text-display" class="text-display"></h1>
+        </div>
+        <button class="button" id="numOne" onclick="answer(1)"></button>
+        <button class="button" id="numTwo" onclick="answer(2)"></button>
+        <button class="button" id="numThree" onclick="answer(3)"></button>
+        <button class="button" id="numFour" onclick="answer(4)"></button>
+    </div>
+
+</body>
+
+</html>
