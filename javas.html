@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS</title>
+
+    <style>
+        .main-container {
+            height: 45vw;
+            width: 60vw;
+            background-color: #69898a;
+            margin-left: 20%;
+        }
+
+        .display {
+            background-color: grey;
+            height: 23%;
+            width: 100%;
+            font-size: 40px;
+            text-align: center;
+
+        }
+
+        button {
+            font-size: 20px;
+            border-radius: 20px;
+            height: 50px;
+            width: 400px;
+            background-color: olive;
+            margin-top: 3%;
+            margin-left: 20%;
+
+        }
+
+        #input-box {
+            margin-left: 20%;
+            margin-top: 3%;
+            font-size: 30px;
+            width: 50%;
+            height: 8%;
+        }
+
+        #input-box-two {
+            margin-left: 20%;
+            margin-top: 3%;
+            font-size: 30px;
+            width: 50%;
+            height: 8%;
+        }
+    </style>
+    <script>
+        function process(x, y) {
+            let z = (x) + (y);
+
+
+
+            let output = "";
+
+            if (z % 2 == 0) {
+                output = "EVEN";
+            } else {
+                output = "ODD";
+            }
+
+            return output;
+        }
+
+        function problemOne() {
+            let x = Number(prompt("Enter a value for x  = "));
+            let y = Number(prompt("Enter a value for y  = "));
+
+
+            alert(process(x, y));
+
+        }
+
+
+        function problemTwo() {
+            let x = 100
+            let y = 200
+
+            let z = process(x, y);
+            let output = "";
+
+
+            console.log("The value of z is ", output);
+        }
+
+        function problemThree() {
+            let x = document.getElementById("input-box").value
+            let y = document.getElementById("input-box-two").value
+
+            let z = Number(x) + Number(y);
+            let output = "";
+
+            if (z % 2 == 0) {
+                output = "EVEN";
+            } else {
+                output = "ODD";
+            }
+            document.getElementById("output").innerHTML = output;
+
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <h1 id="output"></h1>
+        <div class="display" id="display-text"></div>
+
+
+        <input type="number" id="input-box">
+        <input type="number" id="input-box-two">
+
+        <button class="button" onclick="problemOne()">Button One</button>
+        <button class="button" onclick="problemTwo()">Button Two</button>
+        <button class="button" onclick="problemThree()">Button Three</button>
+
+    </div>
+
+</body>
+
+</html>
